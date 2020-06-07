@@ -1,26 +1,17 @@
 {
-  "name": "spacex-graphql",
-  "version": "1.0.0",
-  "description": "App listing Spacex Missions",
-  "main": "server.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js",
+    "server": "cd server && nodemon server.js",
     "client": "cd client && yarn start",
     "dev": "concurrently \"yarn server\" \"yarn client\" ",
     "build": "cd client && yarn build"
   },
-  "author": "Jon Fossheim",
-  "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
-    "concurrently": "^5.2.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-graphql": "^0.9.0",
-    "graphql": "^15.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
+    "concurrently": "^5.2.0"
   }
 }
