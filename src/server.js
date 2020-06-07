@@ -12,7 +12,7 @@ const router = express.Router();
 app.use(cors());
 
 app.use(
-  '/.netlify/functions/api',
+  '/.netlify/functions/server',
   graphqlHTTP({
     schema,
     graphiql: true,
