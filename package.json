@@ -10,11 +10,11 @@
     "client"
   ],
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve server.js",
-    "server": "nodemon server.js",
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "server": "nodemon  src/server.js",
     "client": "cd client && yarn start",
     "dev": "concurrently \"yarn server\" \"yarn client\" ",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build server.js && cd client && yarn build"
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src && cd client && yarn build"
   },
   "dependencies": {
     "axios": "^0.19.2",

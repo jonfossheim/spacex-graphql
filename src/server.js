@@ -1,7 +1,7 @@
 const express = require('express');
 const serverless = require('serverless-http');
 const graphqlHTTP = require('express-graphql');
-const schema = require('./schema');
+const schema = require('../schema');
 const cors = require('cors');
 const path = require('path');
 
