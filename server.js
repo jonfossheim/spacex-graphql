@@ -29,6 +29,5 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
-app.use('/.netlify/functions/api', router);
-
+module.exports = app;
 module.exports.handler = serverless(app);
