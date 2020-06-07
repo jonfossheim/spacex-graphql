@@ -1,8 +1,4 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "App listing Spacex Missions",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -10,8 +6,6 @@
     "dev": "concurrently \"yarn server\" \"yarn client\" ",
     "build": "cd client && yarn build"
   },
-  "author": "Jon Fossheim",
-  "license": "MIT",
   "dependencies": {
     "cross-env": "7.0.2",
     "client": "1.0.0",
