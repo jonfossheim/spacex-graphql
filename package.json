@@ -2,7 +2,7 @@
   "name": "spacex-graphql",
   "version": "1.0.0",
   "description": "App listing Spacex Missions",
-  "main": "server.js",
+  "main": "src/server.js",
   "private": true,
   "author": "Jon Fossheim",
   "license": "MIT",
