@@ -1,6 +1,6 @@
 {
   "private": true,
-  "main": "/server/server.js",
+  "main": "./server/server.js",
   "workspaces": [
     "client",
     "server"
