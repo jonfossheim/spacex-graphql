@@ -12,7 +12,7 @@ import LaunchSpecific from './pages/LaunchSpecific';
 import * as serviceWorker from './serviceWorker';
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: '/.netlify/functions/server',
 });
 
 ReactDOM.render(
